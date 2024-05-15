@@ -75,5 +75,60 @@ header nav a{
 }
 .wwd{
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
+.wwd-title{
+    grid-area: 1/1/2/3;
+}
+.wwd-kitchen-img{
+    grid-area: 2/1/2/3;
+}
+.wwd-kitchen-a{
+    grid-area: 3/1/4/2;
+    margin: 0 4rem;
+}
+.wwd-bathroom-img{
+    grid-area: 2/2/3/3;
+}
+.wwd-bathroom-a{
+    grid-area: 3/2/4/3;
+    margin: 0 3.5rem;
+}
+.wwd-basement-img{
+    grid-area: 4/1/5/2;
+}
+.wwd-basement-a{
+    grid-area: 5/1/6/2;
+    margin: 0 3.5rem;
+}
+.wwd-addition-img{
+    grid-area: 4/2/5/3;
+}
+.wwd-addition-a{
+    grid-area: 5/2/6/3;
+    margin: 0 4rem;
+}
+.wwd-custom-img{
+    grid-area: 6/1/7/3;
+}
+.wwd-custom-a{
+    grid-area: 7/1/8/3;
+    margin: 0 9rem;
+}
+.wwd img{
+    justify-self: center;
+    align-self: center;
+}
+.check-out{
+    background-color: #fff;
+    font-family: 'Lato';
+    background-image: url(Images/check-out-portfolio-photo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+}
