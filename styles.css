@@ -140,18 +140,24 @@ header nav a{
     max-height: 100%;
     padding: 1rem;
 }
+.check-out{
+    display: grid;
+    padding: 2rem 0 3rem 0;
+}
 .check-out h2{
     color: #023854;
     margin: 2rem 4rem;
     font-size: 3.5rem;
+    display: grid;
 }
 .check-out a{
     text-decoration: none;
     color: #fff;
-    margin: 2rem 4rem;
+    margin: 4rem 2rem 8rem 2rem;
     padding: .75rem 1.25rem;
     background-color: #a02843;
     font-size: 1.25rem;
+    display: grid;
 }
 .check-out a{
     position: absolute;
@@ -419,3 +425,58 @@ footer>.copyright{
 .employment a:hover{
     text-decoration: underline;
 }
+.check-out{
+    position: relative;
+    height: 350px;
+}
+.view-our{
+    font-family: 'Lato';
+    background-image: url(Images/view-our-blue-photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    padding: 1rem;
+}
+.view-our{
+    display: grid;
+    padding: 2rem 0 1rem 0;
+}
+.view-our h2{
+    color: #fff;
+    margin: 0 4rem;
+    font-size: 3.5rem;
+    display: grid;
+}
+.view-our a{
+    text-decoration: none;
+    color: #fff;
+    margin: 2rem;
+    padding: .75rem 1.25rem;
+    background-color: #a02843;
+    font-size: 1.25rem;
+    display: grid;
+    width: 175px;
+    text-align: center;
+    margin-left: 17rem;
+}
+.view-our a:hover{
+    text-decoration: underline;
+}
+.our-process h2{
+    font-family: 'Bebas Neue';
+    color: #023854;
+    text-align: center;
+    font-size: 2.75rem;
+    margin: 2rem 0 0 0;
+}
+.our-process h3{
+    font-family: 'Lato';
+    color: #a02843;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.75rem;
+    margin: 0 0 2rem 0;
+}
+
+
