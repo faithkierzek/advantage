@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="home-header">
         <img src="Images/adr-logo-one-color-white (1).png" alt="Advantage Design + Remodel all white logo" class="white-logo">
         <nav class="header-nav">
             <a href="index.html" class="current-page">Home</a>
@@ -60,9 +60,10 @@
             <a href="#form">BOOK A CONSULTATION</a>
         </div>
         <br>
+        <br>
         <div class="lets-connect" id="form">
             <h3>Let's Connect!</h3>
-            <form>
+            <form action="/submit-form" method="post">
                 <h4>Contact Form</h4>
                 <label for="name">Your Name:</label>
                 <input type="text" id="name">
@@ -70,13 +71,14 @@
                 <input type="text" id="email">
                 <label for="message">Message</label>
                 <input type="text" id="message">
+                <input type="submit" value="Submit">
             </form>
             <br>
         </div>
         <br>
     </main>
     <footer>
-        <img src="Images/adr-logo-full-color.jpg" alt="Advantage Design + Remodel full color logo">
+        <img src="Images/adr-logo-full-color.jpg" alt="Advantage Design + Remodel full color logo" class="footer-logo">
         <br>
         <div class="socials">
             <p>Check Us Out On Social Media!</p>

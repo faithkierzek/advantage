@@ -84,8 +84,8 @@ header nav a{
     grid-area: 1/1/2/3;
 }
 .wwd-kitchen-img{
-    grid-area: 2/1/2/3;
-    justify-self: auto;
+    grid-area: 2/1/3/2;
+    justify-self: center;
 }
 .wwd-kitchen-a{
     grid-area: 3/1/4/2;
@@ -164,6 +164,9 @@ header nav a{
     right: 0;
     top: 70%;
 }
+.check-out a:hover{
+    text-decoration: underline;
+}
 .ready-to-start{
     background-color: #023854;
     color: #fff;
@@ -185,6 +188,9 @@ header nav a{
     margin: 1rem auto;
     display: inline-block;
     width: 195px;
+}
+.ready-to-start a:hover{
+    text-decoration: underline;
 }
 .lets-connect{
     font-family: 'Lato';
@@ -226,6 +232,20 @@ header nav a{
 }
 input#message{
     height: 200px;
+}
+input[type='submit']{
+    background-color: #023854;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: .25px solid #000;
+    margin: 1rem 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+input[type='submit']:hover{
+    background-color: #011118;
+    text-decoration: underline;
 }
 footer{
     font-family: 'Lato';
@@ -299,6 +319,9 @@ footer>.copyright{
     width: 300px;
     justify-self: center;
 }
+.why-remodel img{
+    display: none;
+}
 .why-remodel{
     background-color: #c6c4c4;
     padding: 1rem;
@@ -358,6 +381,8 @@ footer>.copyright{
     font-size: 1rem;
     font-style: italic;
     font-weight: 300;
+    justify-self: center;
+    align-self: center;
 }
 .testimonial-title{
     grid-area: 1/1/2/3;
@@ -398,7 +423,7 @@ footer>.copyright{
     font-family: 'Bebas Neue';
     color: #fff;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .employment-ps{
     font-family: 'Lato';
@@ -455,13 +480,15 @@ footer>.copyright{
     padding: .75rem 1.25rem;
     background-color: #a02843;
     font-size: 1.25rem;
-    display: grid;
     width: 175px;
     text-align: center;
-    margin-left: 17rem;
+    justify-self: right;
 }
 .view-our a:hover{
     text-decoration: underline;
+}
+.our-process{
+    display: grid;
 }
 .our-process h2{
     font-family: 'Bebas Neue';
@@ -476,7 +503,478 @@ footer>.copyright{
     text-align: center;
     font-style: italic;
     font-size: 1.75rem;
-    margin: 0 0 2rem 0;
+    margin-top: 1rem;
 }
-
-
+.our-process img{
+    width: 200px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 1rem;
+}
+.our-process h4{
+    font-family: 'Bebas Neue';
+    color: #023854;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+.our-process p{
+    font-family: 'Lato';
+    color: #fff;
+    text-align: left;
+    font-size: .85rem;
+    margin: 0 3rem;
+    padding: 1.5rem;
+    background-color: #023854;
+}
+.services{
+    display: grid;
+}
+.services h2{
+    font-family: 'Bebas Neue';
+    color: #a02843;
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 0;
+}
+.services h3{
+    font-family: 'Lato';
+    text-align: center;
+    font-size: 1.75rem;
+}
+.services p{
+    font-family: 'Lato';
+    text-align: left;
+    font-size: .85rem;
+}
+.kitchens{
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #023854;
+    color: #fff;
+}
+.bathrooms{
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #023854;
+    color: #fff;
+}
+.basements{
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #023854;
+    color: #fff;
+}
+.additions{
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #023854;
+    color: #fff;
+}
+.custom-countertops{
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #023854;
+    color: #fff;
+}
+.portfolio-page{
+    display: grid;
+}
+.kitchen-portfolio, .bathroom-portfolio, .basement-portfolio, .addition-portfolio, .countertops-portfolio{
+    display: grid;
+}
+.portfolio-page h2{
+    font-family: 'Bebas Neue';
+    color: #a02843;
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 0;
+}
+.portfolio-page h4{
+    font-family: 'Lato';
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    background-color: #023854;
+}
+.portfolio-page img{
+    display: grid;
+    max-width: 90%;
+    justify-self: center;
+    align-self: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: .75rem;
+}
+.portfolio-page h4{
+    margin-top: 3rem;
+}
+.kitchen-portfolio h4{
+    margin-top: 1rem;
+}
+@media (min-width:900px){
+    .header-image{
+        display: none;
+    }
+    header{
+        padding: 1.25rem;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .home-header{
+        background-image: url(Images/home-blue-photo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 100%;
+        height: 500px;
+        padding: 4rem;
+    }
+    .white-logo{
+        grid-area: 1/1/2/4;
+        width: 28rem;
+        margin: 0;
+        justify-self: center;
+        align-self: center;
+    }
+    .header-nav{
+        float: none;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        grid-area: 1/4/2/9;
+        align-self: center;
+        justify-self: right;
+    }
+    header nav a{
+        font-size: 1.45rem;
+    }
+    .header-nav a.current-page{
+        color: #fff;
+    }
+    header h1{
+        display: grid;
+        color: #fff;
+    }
+    .home-header h1{
+        grid-area: 2/1/3/6;
+        font-size: 7rem;
+        font-weight: 500;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        line-height: 6.5rem;
+    }
+    header .form{
+        display: grid;
+    }
+    .form{
+        grid-area: 3/1/5/4;
+        font-family: 'Lato';
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background-color: #a02843;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+    header a:hover{
+        text-decoration: underline;
+    }
+    .wwd{
+        grid-template-columns: repeat(6, 1fr);
+        padding: 1rem;
+    }
+    .wwd h2{
+        font-size: 3.5rem;
+    }
+    .wwd-title{
+        grid-area: 1/2/2/6;
+        margin-bottom: .5rem;
+    }
+    .wwd img{
+        width: 16rem;
+        margin: 1rem;
+    }
+    .wwd-kitchen-img{
+        grid-area: 2/1/3/3;
+        width: 16rem;
+    }
+    .wwd-kitchen-a{
+        grid-area: 3/1/4/3;
+    }
+    .wwd-bathroom-img{
+        grid-area: 2/3/3/5;
+        width: 16rem;
+    }
+    .wwd-bathroom-a{
+        grid-area: 3/3/4/5;
+    }
+    .wwd-basement-img{
+        grid-area: 2/5/3/7;
+        width: 16rem;
+    }
+    .wwd-basement-a{
+        grid-area: 3/5/4/7;
+    }
+    .wwd-addition-img{
+        grid-area: 4/2/5/4;
+    }
+    .wwd-addition-a{
+        grid-area: 5/2/6/4;
+    }
+    .wwd-custom-img{
+        grid-area: 4/4/5/6;
+    }
+    .wwd-custom-a{
+        display: grid;
+        grid-area: 5/4/6/6;
+        margin: 0;
+    }
+    .wwd a{
+        font-size: 1.25rem;
+    }
+    .check-out{
+        height: 500px;
+    }
+    .check-out h2{
+        font-size: 6rem;
+        line-height: 5.5rem;
+        font-weight: 800;
+        margin-left: 6rem;
+        margin-top: 4rem;
+    }
+    .check-out a{
+        font-size: 1.75rem;
+        font-weight: 700;
+        padding: 1rem 3rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+    }
+    .ready-to-start h2{
+        font-size: 4.5rem;
+        margin: 2rem 0;
+    }
+    .ready-to-start a{
+        font-size: 1.4rem;
+        font-weight: 600;
+        width: 275px;
+    }
+    .lets-connect{
+        margin: 1rem 6rem;
+    }
+    .lets-connect h4{
+        text-align: left;
+        font-size: 1.25rem;
+        margin: 0;
+    }
+    .lets-connect label{
+        margin-left: 0;
+    }
+    input[type='submit']{
+        font-size: 1rem;
+        margin-right: 0;
+        margin-left: 30rem;
+        margin-bottom: 0;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr .15fr 0 0;
+        height: 200px;
+    }
+    .footer-logo{
+        grid-area: 1/1/2/3;
+        width: 600px;
+        margin-top: 2rem;
+    }
+    .contact-info{
+        grid-area: 2/1/3/2;
+        font-size: 1.25rem;
+        margin: 3rem 1rem 2rem 3rem;
+    }
+    .contact-info img{
+        width: 3rem;
+    }
+    .socials{
+        grid-area: 2/2/3/3;
+        margin: 1rem;
+    }
+    .copyright{
+        display: grid;
+    }
+    footer>.copyright{
+        grid-area: 3/1/3/3;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+    .about-us-header{
+        background-image: url(Images/about-us-blue-photo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 100%;
+        height: 450px;
+        padding: 1rem 4rem 4rem 4rem;
+    }
+    .about-us-header h1{
+        grid-area: 2/1/3/6;
+        font-size: 7rem;
+        font-weight: 500;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        line-height: 6.5rem;
+        align-self: end;
+    }
+    .our-process-header{
+        background-image: url(Images/our-process-blue-photo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 100%;
+        height: 500px;
+        padding: 1rem 4rem 4rem 4rem;
+    }
+    .our-process-header h1{
+        grid-area: 2/1/3/6;
+        font-size: 7rem;
+        font-weight: 500;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        line-height: 6.5rem;
+        align-self: end;
+    }
+    .services-header{
+        background-image: url(Images/services-blue-photo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 100%;
+        height: 500px;
+        padding: 1rem 4rem 4rem 4rem;
+    }
+    .services-header h1{
+        grid-area: 2/1/3/6;
+        font-size: 7rem;
+        font-weight: 500;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        line-height: 6.5rem;
+        align-self: end;
+    }
+    .portfolio-header{
+        background-image: url(Images/portfolio-blue-photo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 100%;
+        height: 500px;
+        padding: 1rem 4rem 4rem 4rem;
+    }
+    .portfolio-header h1{
+        grid-area: 2/1/3/6;
+        font-size: 7rem;
+        font-weight: 500;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        line-height: 6.5rem;
+        align-self: end;
+    }
+    .story{
+        grid-template-columns: 2fr 1.5fr;
+    }
+    .story h2{
+        grid-area: 1/1/2/2;
+        font-size: 3rem;
+    }
+    .story img{
+        grid-area: 1/2/4/3;
+        align-self: center;
+        width: 350px;
+        margin: 1rem;
+    }
+    .story p{
+        font-size: .95rem;
+        text-align: left;
+        margin-left: 1rem;
+        margin-top: 0;
+        margin-right: 1rem;
+    }
+    .why-remodel{
+        display: grid;
+    }
+    .why-remodel img{
+        display: grid;
+        max-width: 100%;
+        width: 715px;
+        margin: 0 2rem 0 2rem;
+        padding: 2rem;
+        background-color: #a02843;
+        justify-self: center;
+    }
+    .why-remodel p{
+        margin: 0 2rem 2rem 2rem;
+        padding: 0 2rem 2rem 2rem;
+        width: 715px;
+        font-size: .95rem;
+        text-align: center;
+        justify-self: center;
+    }
+    .testimonials p{
+        font-size: 1.15rem;
+        font-weight: 600;
+    }
+    .testimonials{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .testimonials img{
+        width: 250px;
+        margin-bottom: 1rem;
+    }
+    .testimonial-title{
+        grid-area: 1/1/2/4;
+    }
+    .testimonial-ed-linda{
+        grid-area: 2/2/3/4;
+        margin: 0;
+    }
+    .ed-linda-photo{
+        grid-area: 2/1/5/2;
+    }
+    .ed-linda{
+        grid-area: 3/2/4/4;
+    }
+    .muskego{
+        grid-area: 4/2/5/4;
+    }
+    .testimonial-nancy{
+        grid-area: 5/1/6/3;
+    }
+    .nancy-photo{
+        grid-area: 5/3/8/4;
+    }
+    .nancy{
+        grid-area: 6/1/7/3;
+    }
+    .waukesha{
+        grid-area: 7/1/8/3;
+    }
+    .employment{
+        padding: 2rem;
+    }
+    .employment h2{
+        margin: 0;
+    }
+    .employment a{
+        margin: 2rem 15rem;
+    }
+    .view-our{
+        height: 350px;
+    }
+}
