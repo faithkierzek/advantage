@@ -396,7 +396,7 @@ footer>.copyright{
 }
 .muskego{
     grid-area: 4/1/5/2;
-    align-self: top;
+    align-self: start;
 }
 .testimonial-ed-linda{
     grid-area: 2/2/5/3;
@@ -413,7 +413,7 @@ footer>.copyright{
 }
 .waukesha{
     grid-area: 7/2/8/3;
-    align-self: top;
+    align-self: start;
 }
 .employment{
     background-color: #a02843;
